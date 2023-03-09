@@ -3,20 +3,21 @@
 use_bpm 99
 use_synth :piano
 live_loop :Top do
+  x=1
   #M1
   play :g4
-  sleep 1
+  sleep x
   play :g4
-  sleep 1
+  sleep x
   play :g4
-  sleep 1
+  sleep x
   play :e4,sustain: 0.75
   sleep 0.75
   play:bb4,sustain: 0.25
   sleep 0.25
   #M2
   play :g4
-  sleep 1
+  sleep x
   play :e4,sustain: 0.75
   sleep 0.75
   play:bb4,sustain: 0.25
@@ -24,11 +25,11 @@ live_loop :Top do
   play :g4, sustain: 2
   sleep 2
   play :d5
-  sleep 1
+  sleep x
   play :d5
-  sleep 1
+  sleep x
   play :d5
-  sleep 1
+  sleep x
   play :e5,sustain: 0.75
   sleep 0.75
   play:bb4,sustain: 0.25
@@ -49,14 +50,5 @@ live_loop :Bottom_measure1 do
   end
   stop
 end
+
 sleep 2
-1.times do
-  play :g3
-  play :b3
-  sleep 1
-end
-1.times do
-  play :g3
-  play :e3
-  sleep 1
-end
