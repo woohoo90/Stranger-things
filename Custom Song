@@ -51,13 +51,13 @@ live_loop :Top do
     sleep 0.25
     play :g4, sustain: 2,amp: 2
     sleep 2
-    play :d5,amp: 2.5
+    play :d5,amp: 2
+    sleep 1
+    play :d5,amp: 1.5
     sleep 1
     play :d5,amp: 2
     sleep 1
-    play :d5,amp: 2
-    sleep 1
-    play :e5,sustain: 0.75,amp: 2
+    play :e5,sustain: 0.75,amp: 1.5
     sleep 0.75
     play:bb4,sustain: 0.25,amp: 1.5
     sleep 0.25
