@@ -1,0 +1,48 @@
+#Challenge H
+use_bpm 120
+use_synth :chiplead
+define :function1 do |n1,n2|
+  play n1
+  play n2
+  sleep 0.5
+end
+
+# MEASURE 1----------------------------
+function1 :a4,:a5
+function1 :a4,:a5
+function1 :c5,:c6
+function1 :a4,:a5
+function1 :d5,:d6
+function1 :a4,:a5
+function1 :e5,:e6
+function1 :d5,:d6
+
+# MEASURE 2 ---------------------------
+function1 :c5,:c6
+function1 :c5,:c6
+function1 :e5,:e6
+function1 :c5,:c6
+function1 :g5,:g6
+function1 :c4,:c5
+function1 :e5,:e6
+function1 :c4,:c5
+
+# MEASURE 3 ---------------------------
+function1 :g4,:g5
+function1 :g4,:g5
+function1 :b4,:b5
+function1 :g4,:g5
+function1 :c5,:c6
+function1 :g4,:g5
+function1 :d5,:d6
+function1 :c5,:c6
+
+# MEASURE 4 ---------------------------
+function1 :f4,:f5
+function1 :f4,:f5
+function1 :a4,:a5
+function1 :f4,:f5
+function1 :c5,:c6
+function1 :f4,:f5
+function1 :c5,:c6
+function1 :b4,:b5
