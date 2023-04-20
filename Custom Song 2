@@ -1,3 +1,15 @@
+
+vocals ="C:/Users/vincent_torres/Downloads/fb0d4d50-ccc5-11ed-a20f-4dda3de46616.wav"
+
+vocals2 ="C:/Users/vincent_torres/Downloads/Layer 1 pt2.wav"
+
+theme_sang="C:/Users/vincent_torres/Downloads/Theme sang.wav"
+
+no="C:/Users/vincent_torres/Downloads/noooooooo2.wav"
+
+wee="C:/Users/vincent_torres/Downloads/soundbetter.wav"
+
+#Custom Song 2
 use_bpm 70
 use_synth :piano
 define :function1 do |n1,n2,n3,n4,n5,n6|
@@ -49,6 +61,7 @@ define :measureB do
 end
 
 notes=[:c4,:b3,:c4]#Line 100-104
+zzz=[2,0.5,0.5,0.5,1]
 x=0
 
 live_loop :Top do
@@ -109,3 +122,15 @@ end
 live_loop :Bottom do
   measureB
 end
+
+#Vocals
+sleep 6
+sample vocals
+sleep 7
+sample vocals2,amp: 2
+sleep 6
+sample theme_sang
+sleep 20
+sample no,amp: 0.5
+sleep 3
+sample wee
